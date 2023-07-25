@@ -1,1 +1,112 @@
 /* Write your CSS code here */
+.registration-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .registration-form-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+}
+.form-title {
+  font-size: 48px;
+  color: #ea580c;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .form-title {
+    font-size: 36px;
+  }
+}
+.view-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  min-height: 310px;
+}
+@media screen and (max-width: 767px) {
+  .view-container {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px black;
+    padding: 48px 64px 48px 64px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #9aa5b1;
+}
+.name-input-field {
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #9aa5b1;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.success-image {
+  width: 72px;
+}
+.submit-button {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #ea580c;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.error-field {
+  border: 1px solid #ea580c;
+  background-color: #fff;
+}
+
+.error-message {
+  align-self: flex-start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  color: #ea580c;
+  line-height: 16px;
+}
+
